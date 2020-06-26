@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 940px;
+  margin: 36px auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header img {
+  padding-right: 200px;
+}
+
+header a {
+  padding: 0px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #111111;
+}
+
+.home-intro {
+  background-color: #FBDFDB;
+  border-radius: 30px 30px;
+  width: 100%;
+  height: 366px;
+  position: relative;
+}
+
+.home-intro .about {
+  max-width: 316px;
+  padding: 117px 43px;
+}
+
+.home-intro .about h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 9px;
+}
+
+.home-intro .about p {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+.home-intro img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 71px;
+}
+
+.most-accessed {
+  padding: 45px 0;
+}
+.most-accessed h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  padding-bottom: 18px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  width: 100%;
+}
+
+.card img{
+  max-width: 300px;
+  max-height: 140px;
+  border-radius: 15px 15px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+  padding-bottom: 27px;
+}
+
+footer {
+  background-color: #EEEEEE;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  position: absolute;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  padding: 21px 0;
+}
+
