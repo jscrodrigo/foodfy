@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  max-width: 940px;
+  margin: 38px auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header img {
+  padding-right: 200px;
+  cursor: pointer;
+}
+
+header a {
+  padding: 0px 10px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #111111;
+  cursor: pointer;
+}
+
+.recipes-header:hover {
+  color: pink;
+  transition: color 750ms;
+}
+
+.about-header:hover{
+  color: pink;
+  transition: color 650ms;
+}
+
+.home-intro {
+  background-color: #FBDFDB;
+  border-radius: 30px 30px;
+  width: 100%;
+  height: 366px;
+  position: relative;
+}
+
+.home-intro .about {
+  max-width: 316px;
+  padding: 117px 43px;
+}
+
+.home-intro .about h1 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 9px;
+}
+
+.home-intro .about p {
+  font-size: 18px;
+  line-height: 28px;
+  opacity: 0.7;
+}
+
+.home-intro img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 71px;
+}
+
+.most-accessed {
+  padding: 45px 0;
+}
+.most-accessed h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  padding-bottom: 18px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.card img{
+  max-width: 300px;
+  height: 130px;
+  border-radius: 15px 15px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
+.card img:hover {
+  border: solid;
+  color: pink;
+  transition: color 650ms;
+}
+
+.card h3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+  padding-bottom: 27px;
+}
+
+footer {
+  background-color: #EEEEEE;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  position: absolute;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  padding: 21px 0;
+}
+
+/***ABOUT***/
+
+.about-foodfy {
+  margin-top: 50px;
+  max-width: 100%;
+}
+
+.about-foodfy h1, h2 {
+  margin-bottom: 20px;
+}
+
+.about-foodfy h2 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+.about-foodfy p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  max-width: 100%;
+}
+
+.about-foodfy .our-recipes {
+  margin-bottom: 50px;
+}
+
+/***MODAL***/
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-overlay.active {
+  opacity: 1 ;
+  visibility: visible;
+}
+.modal {
+  background-color:#FFFFFF;
+  width: 660px;
+  height: 413px;
+  position: relative;
+  margin: 200px auto;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.modal img{
+  width: 600px;
+  max-height: 200px;
+  border-radius: 50px;
+  padding: 30px;
+}
+
+.modal h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.modal .author{
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 5px;
+}
+
+.close-modal{
+  color: white;
+  filter: brightness(85%);
+  position: absolute;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.close-modal i:hover{
+  color: black;
+  transition: color 700ms;
+}
+
+/* RECIPE DETAIL */
+
+.recipe-detail__card img {
+  max-width: 100%;
+  height: 280px;
+  border-radius: 15px;
+}
+
+.recipe-detail__card .recipe-name-author {
+  padding: 3.9%;
+  text-align: center;
+}
+
+.recipe-detail__card .recipe-name-author h2{
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.recipe-detail__card .recipe-name-author .author{
+  font-size: 20px;
+  line-height: 20px;
+  color: #777777
+}
+h3 {
+  font-size: 24px;
+}
+.ingredients ul{
+  max-width: 100%;
+  margin-left: 18px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  visibility: visible;
+}
+
+.preparation {
+  margin: 3.9% 0 ;
+  max-width: 100%;
+  visibility: visible;
+}
+
+.preparation p,
+.additional-info p{
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+  text-align: justify;
+  margin-bottom: 3.9%;
+  visibility: visible;
+}
+
+.ingredients-header, .preparation-header, .additional-info__header {
+  margin-bottom: 10px;
+}
+.ingredients-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 650px;
+  align-items: center;
+}
+
+.preparation-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 550px;
+  align-items: center;
+}
+
+.additional-info__header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 400px;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  border: solid 2px;
+  border-radius: 15px;
+  background-color: #FBDFDB;
+  padding: 5px;
+  max-width: 90px;
+}
+
+/*hide class*/
+.ingredients.hide ul,
+ .preparation.hide p,
+ .additional-info.hide p{
+  visibility: hidden;
+  height: 0px;
+}
+
+
+
+
+
+
