@@ -1,23 +1,12 @@
-// const closeButton = document.querySelector('.close-modal');
-// const modalOverlay = document.querySelector('.modal-overlay')
-
 const cards = document.querySelectorAll('.card');
 const button = document.querySelectorAll('.btn');
 const recipeIngredients = document.querySelector('.ingredients');
 const recipePreparation = document.querySelector('.preparation');
 const recipeAdditionalInfo = document.querySelector('.additional-info');
 
-for(let card of cards){
-  // let cardId = card.getAttribute('id');
-  // let cardTitle = card.querySelector('h3').textContent;
-  // let cardAuthor = card.querySelector('.author').textContent;
-  
+for(let card of cards){  
   card.addEventListener('click', function(){
     window.location.href = `/recipes/${card.id}`;
-    // modalOverlay.querySelector('img').src=`./assets/${cardId}.png`;
-    // modalOverlay.querySelector('h3').textContent = cardTitle;
-    // modalOverlay.querySelector('.author').textContent = cardAuthor;
-    // modalOverlay.classList.add('active');
   });
 }
 
@@ -54,7 +43,3 @@ for(let btn of button){
     }
   })
 }
-// closeButton.addEventListener('click', function(){
-//   modalOverlay.classList.remove('active');
-// });
-
